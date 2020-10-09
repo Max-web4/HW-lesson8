@@ -1,0 +1,126 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1000px;
+  height: 1000px;
+  background-color: #c9c9c9;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.grid-container {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px 10px;
+  grid-template-areas:
+    "first first second"
+    "third fourth fifth";
+  position: relative;
+  top: 50px;
+  left: 350px;
+}
+
+.first {
+  grid-area: first;
+  background-color: #fff;
+}
+.second {
+  grid-area: second;
+  background-color: #fff;
+}
+.third {
+  grid-area: third;
+  background-color: #fff;
+}
+.fourth {
+  grid-area: fourth;
+  background-color: #fff;
+}
+.fifth {
+  grid-area: fifth;
+  background-color: #fff;
+}
+.header-first {
+  color: #666666;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-shadow: 2px 4px 3px rgb(255, 255, 255);
+}
+
+.header {
+  color: hsl(0, 0%, 40%);
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 10px;
+  text-transform: uppercase;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+}
+
+.text-first-block {
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 26px;
+  text-transform: uppercase;
+  letter-spacing: 0.75px;
+}
+
+.text {
+  color: #1d1d1d;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.text-on-picture {
+  position: absolute;
+  top: 250px;
+  left: 30px;
+  width: 100%;
+}
+
+.header,
+.text,
+.avka {
+  padding-left: 20px;
+}
+
+.avka {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: absolute;
+  left: 10px;
+}
+
+.text-growth {
+  padding-top: 22px;
+}
+
+.footer {
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 60px;
+  color: #686868;
+  position: relative;
+  top: 10px;
+  left: 180px;
+}
+.grid-container:hover div {
+  opacity: 0.5;
+  transition: all 0.2s ease-in;
+}
+.grid-container div:hover {
+  opacity: 1;
+  transition: all 0.2s ease-in;
+}
+.grid-container :active {
+  opacity: 1;
+  color: #00fc22;
+}
