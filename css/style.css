@@ -25,7 +25,7 @@ body {
 
 .first {
   grid-area: first;
-  background-color: #fff;
+  background-image: url(../img/Car.png);
 }
 .second {
   grid-area: second;
